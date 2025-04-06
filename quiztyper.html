@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quizmaster Patricia</title>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">        
+    <link rel="icon" href="logo.png" type="image/x-icon">  
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(253, 225, 243);
+            text-align: center; /* Midtstill teksten i hele siden */
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        header .logo {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 200px;
+        }
+
+        header a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: rgb(3, 46, 3);
+            font-weight: 700;
+        }
+
+        header a:hover {
+            color: rgb(250, 192, 255);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: rgb(3, 46, 3);
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 800px; /* Begrens bredden på innholdet */
+            margin: 0 auto; /* Sentrer containeren */
+            text-align: center; /* Midtstill teksten i containeren */
+        }
+
+        .about-me h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .about-me p {
+            line-height: 1.6;
+            color: #666;
+            text-align: center; /* Midtstill teksten i avsnittene */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            background: #77aaff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+
+        .social-media a:hover {
+            background: #555;
+            color: #fff;
+        }
+
+        .quiz-image {
+            width: 150px; /* Gjør bildet mindre */
+            height: 150px; /* Sørg for at bildet er kvadratisk */
+            border-radius: 50%; /* Gjør bildet rundt */
+            object-fit: cover; /* Sørg for at bildet fyller rammen uten å bli strukket */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <a href="forside.html">Forside</a>
+        <a href="om.html">Om meg</a>
+        <a href="quiztyper.html">Quiztyper</a>
+        <a href="kontakt.html">Bestill quiz</a>
+       
+    </header>
+
+
+            <div class="container">
+                <h1>Quiztyper</h1>
+                <ul>
+                    
+                    <li><strong>Klassisk Quiz 📚</strong> <br>Velg mellom multimedia (video, musikk, bilder) eller tekstbasert quiz.</li>
+                    <li><strong>Musikkquiz 🎵</strong> <br>Quizen som tester musikkunnskapene dine. Formatet er enkelt å forstå, og kan tilpasses alle aldersgrupper.</li>
+                    <li><strong>Fargequiz 🎨</strong><br>
+                         En interaktiv quiz à la Jeopardy hvor lagene selv velger vanskelighetsgraden på spørsmålene sine. Jo høyere vanskelighetsgrad, desto flere poeng å hente.</li>
+                </ul>
+            </div>
+<br>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.instagram.com/bergenquiz" target="_blank">Følg meg på Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

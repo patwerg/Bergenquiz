@@ -1,0 +1,253 @@
+/* Ensure the body and html take up the full height of the viewport */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(253, 225, 243);
+}
+
+/* Create a flex container for the page */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden; /* Forhindre horisontal rulling */
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box; /* Sikrer at padding inkluderes i bredden */
+    margin-top: 20px;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+}
+
+header a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(3, 46, 3);
+    font-weight: 700;
+}
+
+header a:hover {
+    color: rgb(250, 192, 255);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(3, 46, 3);
+    margin-top: 20px;
+}
+
+.profile-picture {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-me {
+    text-align: center; /* Midtstill teksten i hele seksjonen */
+    margin: 20px auto; /* Legg til litt margin for å skape avstand */
+    max-width: 800px; /* Begrens bredden på innholdet for bedre lesbarhet */
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h2 {
+    text-align: center; /* Midtstill overskriftene */
+    color: #333;
+}
+
+.about-me p {
+    text-align: center; /* Midtstill teksten i avsnittene */
+    line-height: 1.6; /* Gjør teksten mer lesbar */
+    color: #666;
+
+}
+.social-media {
+    margin-top: 20px;
+}
+
+social-media a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    background: #77aaff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.social-media a:hover {
+    background: #555;
+    color: #fff;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    position: relative;
+}
+
+iframe {
+    display: block; /* Sørg for at iframe oppfører seg som et blokk-element */
+    margin: 20px auto; /* Sentrer iframe horisontalt */
+    border: 2px solid #ddd; /* Legg til en lys ramme rundt iframe */
+    border-radius: 10px; /* Gjør hjørnene runde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Legg til en subtil skygge */
+    width: 100%; /* Gjør iframe responsiv */
+    max-width: 1200px; /* Øk maksimal bredde til 1200px */
+    min-width: 600px; /* Sett en minimum bredde for å unngå at den blir for smal */
+    height: 600px; /* Øk høyden for bedre visning */
+     /* Farge på rammen */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Sørg for at containeren fyller mesteparten av siden */
+    max-width: 1200px; /* Begrens bredden på innholdet */
+    margin: 0 auto; /* Sentrer containeren */
+    padding: 0 20px; /* Legg til litt innvendig padding */
+    text-align: center;
+
+}
+
+.container ul {
+    list-style-type: none; /* Fjern punktene fra listen */
+    padding: 0; /* Fjern standard padding */
+    margin: 20px auto; /* Legg til litt margin rundt listen */
+    max-width: 1200px; /* Begrens bredden på listen */
+    display: flex; /* Bruk Flexbox for å plassere elementene horisontalt */
+    flex-wrap: wrap; /* Tillat at elementene brytes til neste rad hvis det ikke er plass */
+    gap: 20px; /* Legg til avstand mellom boksene */
+    justify-content: center; /* Sentrer boksene horisontalt */
+}
+
+.container ul li {
+    background: #fff; /* Sett en hvit bakgrunn for boksen */
+    padding: 20px; /* Legg til innvendig padding */
+    border-radius: 5px; /* Gjør hjørnene runde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Legg til en subtil skygge */
+    text-align: left; /* Juster teksten til venstre */
+    line-height: 1.6; /* Gjør teksten mer lesbar */
+    color: #333; /* Sett en mørk tekstfarge */
+    flex: 1 1 calc(33.333% - 40px); /* Gjør hver boks 1/3 av bredden, med plass til gap */
+    max-width: 300px; /* Sett en maksimal bredde for hver boks */
+    box-sizing: border-box; /* Inkluder padding og border i bredden */
+}
+
+.container ul li strong {
+    color: rgb(3, 46, 3); /* Fremhev teksten i <strong> */
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Sørg for at containeren fyller mesteparten av siden */
+    max-width: 1200px; /* Begrens bredden på innholdet */
+    margin: 0 auto; /* Sentrer containeren */
+    padding: 0 20px; /* Legg til litt innvendig padding */
+    text-align: center;
+
+}
+
+.small-container {
+    text-align: center; /* Midtstill teksten i hele containeren */
+}
+
+.small-container ul {
+    list-style-type: none; /* Fjern punktene fra listen */
+    padding: 20px; /* Legg til innvendig padding for hele boksen */
+    margin: 20px auto; /* Legg til litt margin rundt boksen */
+    max-width: 800px; /* Begrens bredden på boksen */
+    background: #fff; /* Sett en hvit bakgrunn for boksen */
+    border-radius: 10px; /* Gjør hjørnene runde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Legg til en subtil skygge */
+    border: 2px solid #ddd; /* Legg til en lys ramme rundt boksen */
+}
+
+.small-container ul li {
+    font-size: 20px; /* Øk skriftstørrelsen for bedre lesbarhet */
+    background: none; /* Fjern bakgrunn fra individuelle listeelementer */
+    padding: 10px 0; /* Legg til litt avstand mellom elementene */
+    border: none; /* Fjern ramme fra individuelle listeelementer */
+    box-shadow: none; /* Fjern skygge fra individuelle listeelementer */
+    text-align: center; /* Midtstill teksten i hvert listeelement */
+    line-height: 1.6; /* Gjør teksten mer lesbar */
+    color: #333; /* Sett en mørk tekstfarge */
+}
+
+   /* Inkluder padding og border i bredden */
+
+
+.container ul li strong {
+    color: rgb(3, 46, 3); /* Fremhev teksten i <strong> */
+    font-weight: bold;
+}
+div {
+    flex: 1;
+    text-align: center;
+    max-width: 1200px; /* Begrens bredden på alle div-elementer */
+    margin: 0 auto;
+}
+
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: rgb(3, 46, 3);
+    font-weight: bold;
+    background: #77aaff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.social-media a:hover {
+    background: #555;
+    color: #fff;
+}
+
+.quiz-image {
+    width: 150px; /* Gjør bildet mindre */
+    height: 150px; /* Sørg for at bildet er kvadratisk */
+    border-radius: 50%; /* Gjør bildet rundt */
+    object-fit: cover; /* Sørg for at bildet fyller rammen uten å bli strukket */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Valgfritt: Legg til en skygge for å gjøre det mer visuelt tiltalende */
+    margin-top: 20px;
+}
